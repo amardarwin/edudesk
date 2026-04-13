@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "git add . && git commit -m \"Auto-deploy update\" && git push"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
