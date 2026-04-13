@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import connectToDatabase from "@/lib/mongodb";
 import ChapterModel from "@/models/Chapter";
+import SubjectModel from "@/models/Subject"; // Ensure registered
+import BoardModel from "@/models/Board"; // Ensure registered
 
 export async function GET(req: NextRequest) {
   try {
