@@ -9,6 +9,7 @@ export default function MaterialBuilderPage() {
   const { classId, subjectId, chapterId } = useParams();
   const [materials, setMaterials] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isAdding, setIsAdding] = useState(false);
   const [formData, setFormData] = useState({ name: "", type: "pdf", links: { english: "", hindi: "", punjabi: "" }, chapterId: chapterId, order: 0 });
 
   // Native HTML5 Drag and Drop References
